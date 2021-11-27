@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/default_pic_but"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:src="@drawable/ic_default_pic"/>
+
+        <ImageView
+            android:id="@+id/camera_open_id"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:src="@drawable/ic_menu_camera"/>
+        <ImageView
+            android:id="@+id/gallery_open_id"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:src="@drawable/ic_menu_gallery"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="DEFAULT"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="3"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="CAMERA"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="3"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="GALLERY"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+</LinearLayout>

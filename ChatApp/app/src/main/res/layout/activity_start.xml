@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/splash_screen_background"
+    android:layout_height="match_parent"
+    tools:context=".Activities.StartActivity">
+
+    <TextView
+        android:layout_marginTop="220dp"
+        android:id="@+id/chat_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's Chat"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="40sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/login"
+        android:background="@color/purple_700"
+        android:textColor="#fff"
+        android:text="Login"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#E91E63"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#000000" />
+
+</LinearLayout>

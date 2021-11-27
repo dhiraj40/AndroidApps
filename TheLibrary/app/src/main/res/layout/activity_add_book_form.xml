@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookFormActivity"
+>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="@string/add_book_details"
+        android:background="#424242"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image_view_id"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/default_img"
+            android:contentDescription="Book Image"/>
+
+        <Button
+            android:id="@+id/choose_img_but"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="Choose pic" />
+
+        <EditText
+            android:id="@+id/txt_add_book_name"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:hint="Book Name"
+            android:lines="1"
+            android:textColorHint="#928080"
+            android:minHeight="48dp"
+            android:nextFocusForward="@id/txt_add_book_desc"/>
+        <EditText
+            android:id="@+id/txt_add_book_desc"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:hint="Book Description"
+            android:layout_margin="5dp"
+            android:textColorHint="#928080"
+            android:lines="1"
+            android:minHeight="48dp"
+            android:nextFocusForward="@id/txt_add_book_rack"/>
+        <EditText
+            android:id="@+id/txt_add_book_rack"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:hint="Rack"
+            android:lines="1"
+            android:textColorHint="#928080"
+            android:minHeight="48dp"
+            android:nextFocusForward="@id/txt_add_book_step"/>
+        <EditText
+            android:id="@+id/txt_add_book_step"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:hint="Step"
+            android:textColorHint="#928080"
+            android:minHeight="48dp"
+            android:lines="1"
+            android:nextFocusForward="@id/txt_add_book_colm"/>
+        <EditText
+            android:id="@+id/txt_add_book_colm"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:hint="Column"
+            android:lines="1"
+            android:textColorHint="#928080"
+            android:layout_margin="5dp"
+            android:minHeight="48dp" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/black"
+            android:layout_margin="5dp"
+            >
+            <RadioButton
+                android:id="@+id/radio_add_book_pos_front"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="front"
+                android:textColor="@color/white"
+                android:checked="true"
+                />
+            <RadioButton
+                android:id="@+id/radio_add_book_pos_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="back"
+                android:layout_marginStart="40dp"
+                android:textColor="@color/white"
+                />
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/add_book_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
